@@ -217,5 +217,30 @@ Faça o merge do PR na branch principal
 
 PRs facilitam revisão de código, discussão sobre as mudanças e histórico organizado de contribuições.
 
+Fazendo Fork de um repositório
 
+Fork é uma cópia de um repositório de terceiros para a sua própria conta do GitHub. É muito usado para contribuir com projetos open source aos quais você não tem acesso direto de escrita.
+
+Fluxo típico de contribuição via fork:
+
+# 1. Faça o fork pelo site do GitHub (botão "Fork")
+
+# 2. Clone o SEU fork
+git clone https://github.com/seu-usuario/repositorio.git
+
+# 3. Adicione o repositório original como remoto "upstream"
+git remote add upstream https://github.com/dono-original/repositorio.git
+
+# 4. Crie uma branch para sua contribuição
+git checkout -b minha-contribuicao
+
+# 5. Faça as alterações, commit e push para o SEU fork
+git push origin minha-contribuicao
+
+# 6. Abra um Pull Request do seu fork para o repositório original
+
+Para manter seu fork atualizado com o repositório original:
+
+git fetch upstream
+git merge upstream/main
 
