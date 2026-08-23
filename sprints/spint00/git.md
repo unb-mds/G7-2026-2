@@ -164,5 +164,22 @@ Após o merge, se a branch não for mais necessária:
 
 git branch -d nome-da-branch
 
+Iniciando com GitHub
+
+GitHub é uma plataforma de hospedagem de repositórios Git na nuvem, usada para colaboração.
+
+Conectando um repositório local a um repositório remoto no GitHub:
+
+bash
+git remote add origin https://github.com/usuario/repositorio.git
+git remote -v                      # lista os remotos configurados
+
+git push -u origin main            # envia os commits locais para o GitHub (-u define o upstream)
+
+Para trazer um repositório do GitHub para a máquina local:
+
+bash
+git clone https://github.com/usuario/repositorio.git_
+
 
 
