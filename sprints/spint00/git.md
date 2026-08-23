@@ -170,7 +170,7 @@ GitHub é uma plataforma de hospedagem de repositórios Git na nuvem, usada para
 
 Conectando um repositório local a um repositório remoto no GitHub:
 
-bash
+
 git remote add origin https://github.com/usuario/repositorio.git
 git remote -v                      # lista os remotos configurados
 
@@ -178,8 +178,23 @@ git push -u origin main            # envia os commits locais para o GitHub (-u d
 
 Para trazer um repositório do GitHub para a máquina local:
 
-bash
 git clone https://github.com/usuario/repositorio.git_
+
+Simulando múltiplos devs
+
+Ao trabalhar em equipe, é comum usar duas pastas locais (ou clones) simulando "devs" diferentes para praticar o fluxo colaborativo:
+
+
+git pull origin main     # traz e já integra as atualizações do remoto
+git fetch origin         # apenas baixa as atualizações, sem integrar automaticamente
+
+Fluxo típico de trabalho em equipe:
+
+git pull para atualizar antes de começar a trabalhar
+Criar uma branch para a sua tarefa
+Fazer commits normalmente
+Enviar (git push) a branch para o GitHub
+Abrir um Pull Request para revisão
 
 
 
