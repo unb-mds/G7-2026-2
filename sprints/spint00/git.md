@@ -111,3 +111,26 @@ git reset --hard HEAD~1       # desfaz o commit E descarta as alterações (cuid
 
 git revert <hash-do-commit>   # cria um novo commit que desfaz as mudanças de um commit específico
 # (seguro para usar em histórico já compartilhado)
+
+gitignore
+
+O .gitignore informa ao Git quais arquivos ou pastas devem ser ignorados.
+
+É comum ignorar:
+
+Dependências;
+Arquivos de build;
+Logs;
+Arquivos temporários;
+Arquivos de configuração local;
+Credenciais;
+Variáveis de ambiente.
+
+Arquivo que já está sendo rastreado
+
+Se um arquivo já foi adicionado ao Git, simplesmente colocá-lo no .gitignore não faz o Git parar de rastreá-lo.
+
+git rm --cached nome-do-arquivo
+
+
+
