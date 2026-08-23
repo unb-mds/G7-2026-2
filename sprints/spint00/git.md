@@ -77,5 +77,37 @@ git add .                     # adiciona todos os arquivos modificados/novos
 
 Verifique o que está no stage com:
 
-
 git status
+
+
+Fazendo commits
+
+Um commit registra permanentemente o que está no stage no histórico do repositório.
+
+
+git commit -m "Mensagem descrevendo a alteração"
+
+Boas práticas para mensagens de commit:
+
+Escreva no imperativo: "Adiciona validação de formulário" (não "Adicionado")
+Seja claro e objetivo
+Um commit deve representar uma mudança lógica coesa
+
+Ver o histórico de commits:
+
+git log
+git log --oneline   # versão resumida, uma linha por commit
+
+Desfazendo commits
+
+Existem várias formas de desfazer um commit, dependendo do que você precisa:
+
+
+git commit --amend            # corrige/edita o último commit (mensagem ou conteúdo)
+
+git reset --soft HEAD~1       # desfaz o commit, mantém alterações no stage
+git reset --mixed HEAD~1      # desfaz o commit, mantém alterações no working directory (padrão)
+git reset --hard HEAD~1       # desfaz o commit E descarta as alterações (cuidado, é destrutivo)
+
+git revert <hash-do-commit>   # cria um novo commit que desfaz as mudanças de um commit específico
+# (seguro para usar em histórico já compartilhado)
