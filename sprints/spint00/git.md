@@ -132,5 +132,37 @@ Se um arquivo já foi adicionado ao Git, simplesmente colocá-lo no .gitignore n
 
 git rm --cached nome-do-arquivo
 
+Criando branches
+
+Branches permitem desenvolver funcionalidades isoladamente, sem afetar a branch principal (geralmente main ou master).
+
+bash
+git branch                     # lista as branches existentes
+git branch nome-da-branch      # cria uma nova branch
+git checkout nome-da-branch    # muda para a branch
+git checkout -b nome-da-branch # cria e já muda para a branch (atalho)
+
+# Forma mais atual (Git >= 2.23):
+
+
+git switch nome-da-branch
+git switch -c nome-da-branch   # cria e muda
+
+Fundindo branches (merge)
+
+Depois de terminar o trabalho em uma branch, você pode juntá-la de volta à branch principal:
+
+git checkout main
+git merge nome-da-branch
+
+Tipos de merge:
+
+Fast-forward: quando não houve divergência, o ponteiro só avança
+Merge commit (3-way): quando as branches divergiram, o Git cria um commit específico para juntar as duas
+
+Após o merge, se a branch não for mais necessária:
+
+git branch -d nome-da-branch
+
 
 
