@@ -196,5 +196,26 @@ Fazer commits normalmente
 Enviar (git push) a branch para o GitHub
 Abrir um Pull Request para revisão
 
+Fazendo Pull Request (PR)
+
+Pull Request é uma solicitação para que as alterações de uma branch sejam revisadas e integradas a outra (geralmente main).
+
+Fluxo geral:
+
+
+git checkout -b minha-feature
+# ... altera arquivos, faz commits ...
+git push -u origin minha-feature
+
+Depois, no GitHub:
+
+Acesse o repositório
+Clique em "Compare & pull request"
+Descreva as alterações feitas
+Aguarde revisão/aprovação
+Faça o merge do PR na branch principal
+
+PRs facilitam revisão de código, discussão sobre as mudanças e histórico organizado de contribuições.
+
 
 
