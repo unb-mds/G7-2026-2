@@ -244,3 +244,17 @@ Para manter seu fork atualizado com o repositório original:
 git fetch upstream
 git merge upstream/main
 
+Resumo rápido dos comandos
+bash
+git init                          # cria repositório
+git status                        # vê estado atual
+git add .                         # adiciona ao stage
+git commit -m "mensagem"          # registra commit
+git log --oneline                 # histórico resumido
+git branch nome                   # cria branch
+git switch nome                   # troca de branch
+git merge nome                    # funde branch
+git remote add origin <url>       # conecta ao remoto
+git push -u origin main           # envia pro GitHub
+git pull origin main              # traz do GitHub
+git clone <url>                   # clona repositório
