@@ -19,9 +19,9 @@ Aplicação web para avaliação de professores da UnB, com dados de disciplinas
 
 ## Tecnologias
 
-- **Backend:** Python + Django
-- **Banco de dados:** _(a definir — ex: PostgreSQL / SQLite em dev)_
-- **Frontend:** Django Templates + _(Bootstrap/Tailwind — a definir)_
+- **Backend:** Python 3.12 + FastAPI + Uvicorn
+- **Banco de dados:** PostgreSQL via Docker Compose _(ORM a definir)_
+- **Frontend:** _(a definir — proposta: HTML/CSS/JS puro consumindo a API via `fetch`)_
 - **Integração:** dados extraídos do SIGAA
 - **CI/CD:** GitHub Actions
 
@@ -49,15 +49,19 @@ cd G7-2026-2
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# instalar dependências
-pip install -r requirements.txt
+# instalar dependências do backend
+pip install -r backend/requirements.txt
 
-# aplicar migrações
-python manage.py migrate
+# configurar variáveis de ambiente
+cp backend/.env.example backend/.env  # Windows: copy backend\.env.example backend\.env
+# edite backend/.env e preencha os valores (o .env real nunca é commitado)
 
-# rodar o servidor
-python manage.py runserver
+# rodar o servidor de desenvolvimento
+cd backend
+uvicorn app.main:app --reload
 ```
+
+A API sobe em `http://127.0.0.1:8000` e a documentação interativa fica em `http://127.0.0.1:8000/docs`.
 
 ## Fluxo de contribuição
 
