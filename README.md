@@ -10,12 +10,12 @@ Aplicação web para avaliação de professores da UnB, com dados de disciplinas
 
 | Nome | GitHub | Papel no Sprint atual |
 |---|---|---|
-| _Nome 1_ | [@usuario1](https://github.com/usuario1) | Product Owner |
+| _Nome 1_ | [@nicolaszanin06](https://github.com/@nicolaszanin06) | Product Owner |
 | _Nome 2_ | [@usuario2](https://github.com/usuario2) | Scrum Master |
 | _Nome 3_ | [@usuario3](https://github.com/usuario3) | Dev Team |
-| _Nome 4_ | [@usuario4](https://github.com/usuario4) | Dev Team |
+| _Nome 4_ | [@gabrielrdaraujo](https://github.com/gabrielrdaraujo) | Dev Team |
 | _Nome 5_ | [@usuario5](https://github.com/usuario5) | Dev Team |
-| _Nome 6_ | [@usuario6](https://github.com/usuario6) | Dev Team |
+| _Nome 6_ | [@warlleymedeiros](https://github.com/warlleymedeiros) | Dev Team |
 
 ## Tecnologias
 
