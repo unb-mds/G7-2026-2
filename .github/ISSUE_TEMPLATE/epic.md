@@ -1,6 +1,6 @@
 ---
-name: Tarefa
-about: Criar uma nova tarefa para o projeto
+name: Epic
+about: Criar uma nova Epic para agrupar tarefas relacionadas do projeto
 title: ""
 labels: ""
 assignees: ""
@@ -8,15 +8,23 @@ assignees: ""
 
 ## 📚 Descrição
 
-descreva a sua issue
+descreva a sua epic
 
 ## 🎯 Objetivo
 
-objetivo da sua issue
+objetivo da sua epic
+
+## 📋 Conteúdos
+
+grandes temas/tópicos que esta epic cobre
+
+- [ ]
+- [ ]
+- [ ]
 
 ## ✅ Requisitos (Critérios de Aceite)
 
-requisitos que a issue deve ter pra ser considerada pronta
+requisitos que a epic deve ter pra ser considerada pronta
 
 - [ ]
 - [ ]
