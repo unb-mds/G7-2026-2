@@ -177,6 +177,7 @@ Pontos importantes:
 - `build.context` determina quais arquivos estarão disponíveis para o build;
 - `ports` mapeia a porta `8000` do computador para a porta `8000` do container;
 - `env_file` injeta variáveis em tempo de execução, sem colocá-las na imagem;
+- para o serviço `db`, a imagem `postgres` exige `POSTGRES_PASSWORD` (e, opcionalmente, `POSTGRES_USER`/`POSTGRES_DB`) via `env_file` ou `environment`;
 - `depends_on` controla a ordem de inicialização, mas sozinho não garante que o
   banco já esteja pronto para aceitar conexões;
 - `pgdata` preserva os dados do PostgreSQL entre recriações do container.
