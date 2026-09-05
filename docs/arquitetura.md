@@ -125,7 +125,8 @@ importação precisa cobrir todos eles (RF17).
 | `didatica` | SMALLINT (1–5) | Opinião |
 | `dificuldade` | ENUM (`FACIL`, `MEDIO`, `DIFICIL`) | Opinião |
 | `chamada` | BOOLEAN | Fato |
-| `material` | ENUM (`NAO_DISPONIBILIZA`, `RUIM`, `MEDIO`, `BOM`) | Fato + opinião |
+| `disponibiliza_material` | BOOLEAN | Fato |
+| `qualidade_material` | ENUM (`RUIM`, `MEDIO`, `BOM`) (NULL se `disponibiliza_material=false`) | Fato + opinião |
 | `recomenda` | BOOLEAN | Opinião |
 | `created_at` | TIMESTAMPTZ | |
 
