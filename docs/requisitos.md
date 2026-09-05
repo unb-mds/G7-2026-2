@@ -231,8 +231,8 @@ se o caso de módulo livre (RF07) está sendo atendido.
 | Decisão | Bloqueia | Responsável |
 |---|---|---|
 | Identificação do aluno — modelo de cadastro e sessão | RF01–RF03, e por consequência RF14 | Time + professora |
-| ORM e ferramenta de migração | RF14–RF16, RNF05 | Time |
-| Stack de frontend | Todos os RF de interface | Time |
+| Modelo de execução do SQLAlchemy (síncrono ou assíncrono) | RF14–RF16, RNF05 | Time |
+| Estratégia de deploy do frontend Next.js (SSR vs export estático) | Todos os RF de interface | Time |
 | Valor de N (métrica de cobertura) e mínimo do RNF02 | Apenas métrica e exibição | PO |
 | Viabilidade técnica do scraping do SIGAA | RF16–RF19 | Time |
 
