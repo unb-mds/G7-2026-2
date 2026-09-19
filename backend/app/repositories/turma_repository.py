@@ -11,14 +11,9 @@ def existe_vinculo_professor_disciplina(
 ) -> bool:
     return (
         db.query(Turma.id)
-        .join(
-            turmas_professores,
-            turmas_professores.c.turma_id == Turma.id,
-        )
-        .filter(
-            turmas_professores.c.professor_id == professor_id,
-            Turma.disciplina_id == disciplina_id,
-            Turma.ativa.is_(True),
+        .filter_by(
+            professor_id=professor_id,
+            disciplina_id=disciplina_id,
         )
         .first()
         is not None
